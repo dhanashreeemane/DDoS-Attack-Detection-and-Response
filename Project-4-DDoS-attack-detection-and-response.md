@@ -3,6 +3,39 @@
 ## Introduction
 A Distributed Denial of Service (DDoS) attack aims to overwhelm a network, service, or server with excessive traffic from multiple sources, rendering it unavailable to users. Detecting and responding to DDoS attacks is crucial for maintaining the availability and performance of online services. In this project, you will learn how to detect and respond to DDoS attacks using various tools and techniques.
 
+
+                                         [Attacker Machine (Kali Linux)]
+                                                        ↓
+                                        [Launch DDoS Attack using ddosify]
+                                                        ↓
+                                             [Victim Server Overloaded]
+
+                                                        ↓
+                                       [Monitoring Machine Captures Traffic]
+                                                - tcpdump
+                                                - Wireshark Analysis
+                                                        ↓
+                                            [Identify Malicious IPs]
+
+                                                        ↓
+                                       [Snort IDS Detects Attack Patterns]
+                                                        ↓
+                                            [Snort Alerts Generated]
+
+                                                        ↓
+                                    [fail2ban Takes Action on Victim Machine]
+                                               - Detects high request rate
+                                               - Bans attacker IP
+                                                        ↓
+                                             [Mitigation Successful]
+
+                                                        ↓
+                                        [Post-Attack Analysis & Reporting]
+
+
+
+
+
 ## Pre-requisites
 - Basic understanding of networking concepts
 - Familiarity with Linux command line
